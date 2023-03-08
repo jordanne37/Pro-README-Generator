@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/jordanne37/Pro-README-Generator#readme",
   "dependencies": {
-    "inquirer": "^9.1.4"
+    "inquirer": "^8.2.4"
   }
 }
