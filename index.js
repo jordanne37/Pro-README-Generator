@@ -42,22 +42,17 @@ function init() {
             type: "list",
             name: "license",
             message: "Please choose license",
-            choices: ["MIT", "GPG2.0", "N/A"],
+            choices: ["MIT", "GPG2.0", "N/A", "Apache 2.0 License"],
     
         },
         {
             type: "input",
-            name: "Usage",
-            message: "W",
+            name: "usage",
+            message: "Enter Usage",
         },
         {
             type: "input",
-            name: "table of contents",
-            message: "",
-        },
-        {
-            type: "input",
-            name: "Contributing",
+            name: "contributing",
             message: "",
         },
         {
@@ -68,9 +63,14 @@ function init() {
         {
             type: "input",
             name: "questions",
-            message: "Enter Github username. Enter Github link. Enter email address with instructions on how to reach me",
+            message: "Enter Github username",
         },
-       
+        {
+            type: "input",
+            name: "email",
+            message: "Enter email address",
+        },
+        
     ]).then((answers)=>{
         writeToFile(`README.md`, markdown(answers))
     })
